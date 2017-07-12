@@ -1,0 +1,117 @@
+
+Go to the profile of Rama Ramakrishnan
+Rama RamakrishnanFollow
+Senior Vice President, Data Science, Salesforce. Inspired by elegant thinking regardless of where it originates (math, science, history, music ...)
+Jul 2
+I have data. I need insights. Where do I start?
+This question comes up often.
+It is typically asked by starting data scientists, analysts and managers new to data science.
+Their bosses are under pressure to show some ROI from all the money that has been spent on systems to collect, store and organize the data (not to mention the money being spent on data scientists).
+Sometimes they are lucky — they may be asked to solve a very specific and well-studied problem (e.g., predict which customer is likely to cancel their mobile contract). In this situation, there are numerous ways to skin the cat and it is data science heaven.
+But often they are simply asked to “mine the data and tell me something interesting”.
+Where to start?
+This is a difficult question and it doesn’t have a single, perfect answer. I am sure experienced practitioners have evolved many ways to do this. Here’s one way that I have found to be useful.
+It is based on two notions:
+Every business can be thought of as a complicated system with many moving parts. Nobody really understands it 100%. Even for experienced employees, there’s a gap between their understanding of the business and how it actually works. And since the business keeps changing, this gap is always getting bigger.
+Any data you have about the business describes some aspect of the behavior of this complex system.
+Given this, you can think of an “insight” as anything that increases your understanding of how the system actually works. It bridges the gap between how you think the system works and how it really works.
+Or, to borrow an analogy from Andy Grove’s High Output Management, complex systems are black-boxes and an insight is like a window cut into the side of the black box that “sheds light” on what’s going on inside.
+So the search for insight can be thought of as the effort to understand how something complicated really works by analyzing its data.
+But this is the sort of thing that scientists do! The world is unbelievably complex and they have a tried-and-tested playbook to gradually increase our understanding of it — the Scientific Method.
+Informally:
+Using their current understanding of how the system works (“theory”), they make certain predictions.
+Then they check the data (sometimes setting up elaborate experiments to generate the data) to see if it matches their predictions.
+If not, they dig into what’s going on and update their understanding (“modify the theory”).
+They make new predictions. Repeat the cycle.
+Data scientists and analysts can do the same thing.
+Before you explore the data, write down a short list of what you expect to see in the data: the distribution of key variables, the relationships between important pairs of them, and so on. Such a list is essentially a prediction based on your current understanding of the business.
+Now analyze the data. Make plots, do summaries, whatever is needed to see if it matches your expectations.
+Is there anything that doesn’t match? Anything that makes you go “That’s odd” or “That doesn’t make any sense.”?
+Zoom in and try to understand what in your business is making that weird thing show up in the data like that. This is the critical step.
+You may have just found an insight into the business and increased your understanding*.
+Here’s a real example. A few years ago, we were looking at transaction data from a large B2C retailer. One of the fields in the dataset was ‘transaction amount’.
+What did we expect to see? Well, we expected that most amounts would be around the average, but there will likely be some smaller amounts and some larger amounts. So a histogram of the field would probably look like this:
+
+But when we checked the data, this is what we saw:
+
+We investigated the ‘hmm’.
+Turns out these transactions weren’t made by their typical shopper — young moms shopping for their kids. They were made by people who would travel to the US from abroad once a year, walk into a store, buy lots of items, take them back to their country and sell them in their own stores. They were resellers who had no special relationship with our retailer.
+This retailer didn’t have a physical presence outside North America at that time nor did they ship to those locations from their e-commerce site. But there was enough demand abroad that local entrepreneurs had sprung up to fill the gap.
+This modest “discovery” set off a chain reaction of interesting questions on what sorts of products these resellers were buying, what promotional campaigns may be best suited for them, and even how this data can be used to inform global expansion plans.
+All from a simple histogram.
+The wonderful Isaac Asimov captured the spirit of this beautifully.
+The most exciting phrase to hear in science, the one that heralds new discoveries, is not ‘Eureka!’ but ‘That’s funny…’
+Isaac Asimov
+Note that working back from the data to the “root cause” in the business takes time, effort, and patience. If you have a good network of contacts in the business who can answer your questions, the more productive you will be. Also, what’s an oddity to you may be obvious to them (since their understanding of the business may be better than yours) and you can save time.
+In general, the more you understand the nuances of the business, the more pointed your predictions will be, and ultimately the better insights you will find. So, do everything you can to get into the details of the business. Seek out colleagues who understand the business, learn from them, and if possible make them your co-conspirators.
+Data science knowledge is obviously a good thing to have, but your knowledge of the business will have a much bigger impact on the quality of your work.
+Beyond data science work, I have found this “predict-and-check” mindset to be useful when looking at any piece of analysis.
+Before “flipping the page”, pause for a few seconds to guess what sort of things you would expect to see. You may find that this increases the contrast and you are better able to spot interesting things in a sea of numbers.
+*Or you may discover that there’s a bug in the way your data has been collected or calculated (Twyman’s Law)
+Data ScienceAnalyticsTowards Data Science
+103
+2
+Follow
+Go to the profile of Rama Ramakrishnan
+Rama Ramakrishnan
+Senior Vice President, Data Science, Salesforce. Inspired by elegant thinking regardless of where it originates (math, science, history, music ...)
+Follow
+Towards Data Science
+Towards Data Science
+Sharing concepts, ideas, and codes.
+More from Towards Data Science
+4 Months of Machine & Deep Learning
+Go to the profile of Jason I. Carter
+Jason I. Carter
+39
+
+Also tagged Analytics
+The Mad Genius
+Go to the profile of Corsair's Publishing
+Corsair's Publishing
+12
+
+More on Analytics from Towards Data Science
+ROLLING THE DICE WITH ANALYTICS!
+Go to the profile of Karishma Borkakoty
+Karishma Borkakoty
+2
+
+Responses
+yqfang
+Write a response…
+yqfang
+Conversation between Anil Kaul, PhD and Rama Ramakrishnan.
+Go to the profile of Anil Kaul, PhD
+Anil Kaul, PhD
+Jul 3
+Great article — however I have a fundamental issue with the question itself — not your answer which I think is excellent. Asking the question — I have data and I need insights is fundamentally a wrong question to ask and I believe is behind the disappointment a lot of people have experienced with Big Data. The real question one should be asking — I…
+Read more…
+3
+1 response
+Go to the profile of Rama Ramakrishnan
+Rama Ramakrishnan
+Jul 3
+Good points, Anil.
+The question, unfortunately, gets asked a lot. Perhaps because it is easy to ask it — no prep or deep thinking required. And that’s why I wanted to give hapless data scientists a starting point when faced with this question.
+The real question one should be asking — I have data…
+Read more…
+2
+
+Conversation between Arvind Mohan and Rama Ramakrishnan.
+Go to the profile of Arvind Mohan
+Arvind Mohan
+Jul 5
+Excellent points. Although I can’t help but notice that the “domain knowledge” plays a considerable part in this process. However, considering several major companies recruit PhDs (often in completely unrelated areas) to work on their data science teams, do you think that domain expertise is as important as the statistical/ML expertise? Are there any…
+Read more…
+1
+1 response
+Go to the profile of Rama Ramakrishnan
+Rama Ramakrishnan
+Jul 5
+Hi Arvind,
+Both stats/ML knowledge and knowledge of the business are important but since the latter is harder to come by (you typically can’t get it by reading a book or doing a MOOC) and it may not be as much fun intellectually, it doesn’t get the attention it deserves.
+Read more…
+1
+1 response
+SHARE

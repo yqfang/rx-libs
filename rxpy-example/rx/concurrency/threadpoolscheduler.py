@@ -1,4 +1,9 @@
-from concurrent.futures import ThreadPoolExecutor
+try:
+    from concurrent.futures import ThreadPoolExecutor
+except ImportError:
+    # python 2.6 or earlier, use backport
+    from rx.concurrent import ThreadPoolExecutor
+
 
 from rx.core import Scheduler
 
