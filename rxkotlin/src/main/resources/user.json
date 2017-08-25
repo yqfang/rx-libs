@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "username": "yqfang",
+    "email": "404762352@qq.com",
+    "role": "Admin"
+  },
+  {
+    "id": 2,
+    "username": "yqfang2",
+    "email": "404762352@qq.com",
+    "role": "Regular"
+  },
+  {
+    "id": 3,
+    "username": "yqfang3",
+    "email": "404762352@qq.com",
+    "role": "Regular"
+  }
+]

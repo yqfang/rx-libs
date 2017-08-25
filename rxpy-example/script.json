@@ -1,0 +1,51 @@
+[
+  {
+    "type": "add",
+    "name": "task01",
+    "log_file": "./task01_log.txt",
+    "out_file": "./task01_out.txt",
+    "sequence": 0
+  },
+  {
+    "type": "stat",
+    "name": "task01",
+    "sequence": 5
+  },
+  {
+    "type": "kill",
+    "name": "task01",
+    "sequence": 10
+  },
+  {
+    "type": "stat",
+    "name": "task01",
+    "sequence": 15
+  },
+  {
+    "type": "stat",
+    "name": "task01",
+    "sequence": 17
+  },
+  {
+    "type": "stat",
+    "name": "task01",
+    "sequence": 18
+  },
+  {
+    "type": "stat",
+    "name": "task01",
+    "sequence": 19
+  },  {
+  "type": "add",
+  "name": "task01",
+  "log_file": "./task01_log.txt",
+  "out_file": "./task01_out.txt",
+  "sequence": 21
+},  {
+  "type": "add",
+  "name": "task02",
+  "log_file": "./task01_log.txt",
+  "out_file": "./task01_out.txt",
+  "sequence": 22
+}
+]
