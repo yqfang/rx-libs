@@ -33,4 +33,5 @@ Observable.range(1,10) \
                on_error=lambda e: print(e),
                on_completed=lambda: print("PROCESS 2 done!"))
 
+print("ok")
 input("Press any key to exit\n")
